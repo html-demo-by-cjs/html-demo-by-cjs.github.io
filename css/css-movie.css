@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+#header .notice-list li {
+    display: none;
+    position: relative;
+}
+
+#header .notice-list .active {
+    display: block;
+    animation: noticeList 1s ease-out;
+}
+
+@keyframes noticeList {
+    from {
+        bottom: -8px;
+    }
+    to {
+        bottom: 0;
+    }
+}
+
+#main .recommend .image-list li {
+    display: none;
+}
+
+#main .recommend .image-list .active {
+    display: block;
+}

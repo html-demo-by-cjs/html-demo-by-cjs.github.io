@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+/* 内容宽度为1090px, 且在视口水平居中 */
+.row {
+    width: 1090px;
+    margin: 0 auto;
+}
+
+/* display样式 */
+.dib {
+    display: inline-block;
+}
+
+.di {
+    display: inline;
+}
+
+.db {
+    display: block;
+}
+
+.dn {
+    display: none;
+}
+
+/* 定位 */
+.p-rel {
+    position: relative;
+}
+
+.p-abs {
+    position: absolute;
+}
+
+.p-fixed {
+    position: fixed;
+}
+
+/* 浮动 */
+.fll {
+    float: left;
+}
+
+.flr {
+    float: right;
+}
+
+/* 边框分隔线 */
+.bd-top {
+    border-top: 1px solid;
+}
+
+.bd-left {
+    border-left: 1px solid;
+}
+
+.bd-bottom {
+    border-bottom: 1px solid;
+}
+
+.bd-right {
+    border-right: 1px solid;
+}
+
+.bdc-ccc {
+    border-color: #ccc;
+}
+
+.bdc-ddd {
+    border-color: #ddd;
+}
+
+.bdc-4f4f4f {
+    border-color: #4f4f4f;
+}
+
+/* 商品盒子外边距 */
+.mr {
+    margin-right: 10px;
+}
+
+.mt {
+    margin-top: 10px;
+}
+
+/* 用到components精灵图 */
+.cmp {
+    background: url(../images/component.png) no-repeat;
+}
+
+/* 文本内容不转行省略 */
+.text-overflow {
+    padding: 0 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

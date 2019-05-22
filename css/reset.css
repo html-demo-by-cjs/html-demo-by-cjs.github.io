@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+* {
+    /* 取消所有元素的内外边距 */
+    padding: 0;
+    margin: 0;
+    /* 所有元素为边框盒子 */
+    box-sizing: border-box;
+}
+
+/*region 清浮动*/
+.clear-fixed::after {
+    content: "";
+    display: block;
+    clear: both;
+    height: 0; /*兼容旧版浏览器*/
+    visibility: hidden; /*兼容旧版浏览器*/
+}
+
+.clear-fixed {
+    *zoom: 1; /*兼容IE6~7浏览器*/
+}
+/*endregion*/
+
+/* 默认背景色为白色, 字体大小为12px */
+body {
+    background-color: #fff;
+    font-size: 12px;
+}
+
+/* 取消所有a元素的装饰线 */
+a {
+    text-decoration: none;
+}
+
+/* 所有li是行内块级 */
+li {
+    display: inline-block;
+}
+
+/* 合并表格边框 */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* 去除对焦轮廓 */
+a, input, select, button, textarea {
+    outline: none;
+}
+
+/*去除图片边框*/
+img {
+    border: none;
+    vertical-align: top;
+}
+
